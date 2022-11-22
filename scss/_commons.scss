@@ -1,0 +1,22 @@
+
+.imagen-principal-fondo{
+    background: url(./../imagenes/imagen-fondo.jpg);
+}
+
+
+.h1{
+    color: $maincolor;
+    font-family: $fontMontserrat;
+    font-weight: 900;
+    font-size: x-large;
+    text-align: center;
+    padding: 50px 10px 50px 10px;
+  
+    
+}
+
+/*NAVBAR*/
+.logo-navbar{
+    width: 40px;
+    height: 40px;
+}

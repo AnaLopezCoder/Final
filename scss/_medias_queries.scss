@@ -1,0 +1,58 @@
+
+/* MEDIA QUERIES  */
+@media screen and (min-width:376px) {
+    .container-caracteristicas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            width: 375px;
+            justify-content: center;
+        }
+    }
+}
+
+
+@media  screen and (min-width:527px){
+    .mapa{
+            width: 527px;
+        }    
+}
+
+
+@media screen and (min-width:769px) {
+     
+    .container-caracteristicas{
+       
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        div{
+            width: 375px; 
+            }
+        }
+}
+
+
+@media screen and (min-width:1201px) {
+
+    .container-caracteristicas{
+            div{
+                width: 30vw;
+            } 
+          
+        }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

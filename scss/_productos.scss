@@ -1,0 +1,45 @@
+
+/*PRODUCTOS CON FLEXBOX*/
+.productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 60px;
+    gap: 40px;
+    justify-content: center;
+    
+}
+
+
+.producto{
+    background-color: #a265a9;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    &:hover{
+             transform: scale(1.1) translateY(-10px);
+    }
+}
+
+.producto__imagen{
+    max-width: 100%;
+}
+
+/*BOTONES PRODUCTOS*/
+.productos__boton{
+    background-color: #a265a9;
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: 900;
+    &:hover{
+        background-color: $maincolor;
+        width: 100%;
+    }
+
+}
+ 
+
+
+

@@ -1,238 +1,232 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 /*HOME*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  list-style: none; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    list-style: none;
-}
+.imagen-principal-fondo {
+  background: url(./../imagenes/imagen-fondo.jpg); }
 
+.h1 {
+  color: #8b1c98;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: x-large;
+  text-align: center;
+  padding: 50px 10px 50px 10px; }
 
-.imagen-principal-fondo{
-    background: url(./../imagenes/imagen-fondo.jpg);
-}
+/*NAVBAR*/
+.logo-navbar {
+  width: 40px;
+  height: 40px; }
 
-/* menu principal */
-
-.h1-hecate{
-    color: blueviolet;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: larger;
-    text-align: center
-}
-
-
-/*Nueva navbar*/
-.logo-navbar{
-    width: 40px;
-    height: 40px;
-}
-
-
-/*Triptico-inicio*/
-
-.contenedor-todas-cajas{
+/*Containers caracteristicas*/
+.container-caracteristicas {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px; }
+  .container-caracteristicas div {
     display: flex;
+    background-color: #515151;
+    padding-top: 25px;
+    margin: 10px 0 10px 0;
+    max-width: auto;
     justify-content: center;
-    margin: 20px;
-    padding: 20px;
-}
+    align-content: center;
+    border-radius: 20px;
+    flex-direction: column;
+    width: 100%; }
+    .container-caracteristicas div:hover {
+      display: flex;
+      background-color: #b6b6b6;
+      cursor: pointer; }
+    .container-caracteristicas div img {
+      width: 150px;
+      align-self: center; }
 
+/*CONTACTANOS HOME*/
+.h2-contacto {
+  color: #484646;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: larger;
+  text-align: center; }
 
-.caja-productos-jabon{
-    width: 300px; 
-    background-color: #e78593;  
-    padding: 10px;
-    color: #8b1c98;
-}
+.contactanos-home {
+  filter: drop-shadow(-10px 10px 1px #e7859492);
+  display: flex;
+  background-color: #e78593;
+  height: 200px;
+  margin: 5%;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px; }
 
-.imagen-jabon{
-    width: 100%;  
-    display: inline-block; 
-}
+.contactanos-boton a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center; }
 
-.caja-jabon{
-    font-size: 18px;
-}
+.h2-caracteristicas {
+  color: #ffb6be;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: medium;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
-.boton-jabon{
-   background-color: #a265a9;
-   border: none;
-   font-size: 12px;
-   padding: 5px;
-   border-radius: 10px;
-  }
+/* QUIENES SOMOS*/
+.h2-quienes-somos {
+  color: #8b1c98;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+  text-align: center;
+  line-height: 150%;
+  padding: 20px;
+  margin: 20px; }
 
-a{
-    text-decoration:none; 
-    } 
-    
+.h3-quienes-somos {
+  color: #8b1c98;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: larger;
+  line-height: 150%;
+  text-align: justify;
+  padding: 20px;
+  margin: 20px; }
 
-.boton-jabon:hover{
+.container-quienes-somos {
+  width: 75vw;
+  max-width: 400px;
+  min-width: 220px;
+  margin: auto; }
+  .container-quienes-somos img {
+    width: 100%; }
+
+/*PRODUCTOS CON FLEXBOX*/
+.productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 60px;
+  gap: 40px;
+  justify-content: center; }
+
+.producto {
+  background-color: #a265a9;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10%; }
+  .producto:hover {
+    transform: scale(1.1) translateY(-10px); }
+
+.producto__imagen {
+  max-width: 100%; }
+
+/*BOTONES PRODUCTOS*/
+.productos__boton {
+  background-color: #a265a9;
+  border: none;
+  font-size: 15px;
+  padding: 5px;
+  font-weight: 900; }
+  .productos__boton:hover {
     background-color: #8b1c98;
-   }
+    width: 100%; }
 
-  
+/*DONDE ESTAMOS*/
+.flex-container-ubicacion {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px; }
 
-.caja-productos-shampoo{
-    width: 300px; 
-    background-color: #bfb9cd;  
-    padding: 10px;
-    color: #8b1c98;
-}
+.flex-item1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e78593;
+  align-items: center;
+  width: auto;
+  margin: 10px; }
 
-.imagen-shampoo{
-    width: 100%; 
-}
+.icono-market {
+  width: 100px;
+  margin-top: 40px; }
 
-.caja-productos-acondicionador{
-    width: 300px; 
-    background-color: #e78593;  
-    padding: 10px;
-    color: #8b1c98;
-}
+.pick-up-point {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: larger;
+  text-align: center; }
 
-.imagen-acondicionador{
-    width: 100%; 
-}
+.info-pickup {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: medium;
+  text-align: center;
+  padding: 10px;
+  text-align: center; }
 
-/*PRODUCTOS CON GRID*/
+.mapa {
+  width: 100%; }
+  .mapa iframe {
+    display: flex;
+    width: 100%;
+    height: 400px; }
 
-.container{
-    width: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 1fr 1fr 1fr;
-    gap: 10px 10px; 
+/*CONTACTO*/
+.contenedor-formulario {
+  height: 650px;
+  background-color: #e78593;
+  opacity: 80%;
+  padding: 50px;
+  padding-right: 80px;
+  margin: 50px; }
+
+.h2-formulario {
+  color: #1b1818;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: larger;
+  text-align: center; }
+
+/* MEDIA QUERIES  */
+@media screen and (min-width: 376px) {
+  .container-caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .container-caracteristicas div {
+      width: 375px;
+      justify-content: center; } }
+
+@media screen and (min-width: 527px) {
+  .mapa {
+    width: 527px; } }
+
+@media screen and (min-width: 769px) {
+  .container-caracteristicas {
+    flex-direction: row;
     justify-content: center;
+    gap: 10px; }
+    .container-caracteristicas div {
+      width: 375px; } }
 
-}
-
-
-/*REVENDEDOR*/
-.navegador-revendedor{
-    background-color: #f9060665;
-    text-align: center;
-    color:#6f6170;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: medium;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-inline-start: 10px;
-    padding: 20px;
-    text-decoration: none;
-
-}
-
-.navegador-revendedor:hover{
-    transform: scale(1.1) translateY(-5px)
-}
-
-.mayorista{
-    color: #255;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: medium;
-}
-
-.caja{
-   width: 300px;
-   height: 300px;
-   background-color: chartreuse;
-   background-image: url(¨./../.¨);
-}
-
-
-/*FORMULARIO DE CONTACTO*/
-.contenedor-formulario{
-    height: 400px;
-    background-color: #8b1c98;
-    opacity: 80%;
-    padding: 50px;
-    padding-right: 80px;
-    margin: 50px;
-
-}
-
-/*footer*/
-.h2-seguinos{
-   color: rgb(255, 255, 255);
-   font-family: 'Montserrat', sans-serif;
-   font-weight: 900;
-   font-size: larger;
-   text-align: center;
-}
-
-
-/*Quienes somos*/
-.h1-quienes-somos{
-    color: blueviolet;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: larger;
-    text-align: center
-}
-
-.h2-quienes-somos{
-    color: blueviolet;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: larger;
-    text-align: center;
-    line-height: 150%;
-    text-align: justify;
-    padding: 20px;
-    margin: 20px;
-}
-
-/*Donde estamos*/
-.donde-estamos{
-    color: blueviolet;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: larger;
-    text-align: center;
-}
-
-.mapa{
-border-radius: 50px;
-}
-
-@media screen and (max-width:1200px){
-    .container{
-        width: 100vh;
-        display: grid;
-        grid-template-columns: (1fr, 1fr);
-        grid-template-rows: (1fr, 1fr, 1fr);
-        gap: 10px 10px; 
-        justify-content: center;
-    
-    }
-}
-
-@media screen and (max-width:375px) { 
-    .contenedor-todas-cajas{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 20px;
-        padding: 20px;
-    }
-
-    .container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        gap: 10px 10px; 
-        justify-content: center;
-        }
-
-}
-
+@media screen and (min-width: 1201px) {
+  .container-caracteristicas div {
+    width: 30vw; } }

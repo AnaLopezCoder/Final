@@ -1,0 +1,33 @@
+/* QUIENES SOMOS*/
+
+.h2-quienes-somos{
+    color: $maincolor;
+    font-family: $fontMontserrat;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    line-height: 150%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.h3-quienes-somos{
+    color: $maincolor;
+    font-family: $fontMontserrat;
+    font-weight: 900;
+    font-size: larger;
+    line-height: 150%;
+    text-align: justify;
+    padding: 20px;
+    margin: 20px;
+}
+
+.container-quienes-somos{
+    width: 75vw;
+    max-width: 400px;
+    min-width: 220px;
+    margin: auto;
+    img {
+        width: 100%;
+        }
+}

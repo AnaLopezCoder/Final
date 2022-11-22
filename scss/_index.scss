@@ -1,0 +1,77 @@
+
+
+
+/*Containers caracteristicas*/
+.container-caracteristicas{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    div{
+        display: flex;
+        background-color: #515151;
+        padding-top: 25px;
+        margin:  10px 0 10px 0;
+        max-width: auto;
+        justify-content: center;
+        align-content: center;
+        border-radius: 20px;
+        flex-direction: column;
+        width: 100%;
+        &:hover{
+            display: flex;
+            background-color: rgb(182, 182, 182);
+            cursor: pointer;
+            }
+        
+        img{
+            
+            width: 150px;
+            align-self: center;
+        }
+    }
+}
+
+    
+/*CONTACTANOS HOME*/
+.h2-contacto{
+    color: #484646;
+    font-family: $fontMontserrat;
+    font-weight: 900;
+    font-size: larger;
+    text-align: center;       
+}
+
+.contactanos-home{
+    filter: drop-shadow(-10px 10px 1px #e7859492);
+    display: flex;
+    background-color: $secondcolor;
+    height: 200px;
+    margin: 5%;
+    padding: 10px;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 100px;
+}
+
+
+.contactanos-boton{
+     a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-weight:bold;
+        text-align: center;
+        justify-content: center;
+    }
+
+}
+
+.h2-caracteristicas{
+    color: $thirdcolor;
+    font-family: $fontMontserrat;
+    font-weight: 900;
+    font-size: medium;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+}

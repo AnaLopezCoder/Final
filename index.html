@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hecate costmetica natural</title>
+  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="shortcut icon" href="./imagenes/icono hecate.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Hecate Cosmética Natural | Inicio</title>
+    <meta name="description" content="Apostamos a la cosmética natural para cuidar tu piel, tu cabello y al medioambiente | Envíos sin cargo a todo el país">
+    <meta name="keywords" content="Argentina, Rosario, Cosmética Natural, shampoo sólido, acondicionador sólido, crema hidratante, bálsamo labial, cuerltyfree, jabón artesanal" >
+
 </head>
 
 <body class="imagen-principal-fondo">
 
 <header>
-</header>
+<!--NAVBAR-->
 
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg bg-primary navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html"><img class="logo-navbar" src="./imagenes/icono-hecate-navbar-02.png" alt=""></a>
@@ -36,63 +40,91 @@
           <li class="nav-item">
             <a class="nav-link" href="./pages/donde-estamos.html">DÓNDE ESTAMOS</a>         
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/revendedor.html">CONTACTO</a>         
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-<br>
-<br>
+</header>  
+
 <main>
-    <div>
-      <h1 class="h1-hecate">Cosmética natural hecha desde el respeto y en armonía con la naturaleza.</h1>
+    <!--<div class="hero d-flex justify-content-center align-items-center"> NO SE PORQUE PUSE ESTO-->
+    <h1 class="h1">COSMÉTICA NATURAL HECHA DESDE EL RESPETO Y EN ARMONÍA CON LA NATURALEZA</h1>
     </div>
-
-    <div class="contenedor-todas-cajas">
-    <div class="caja-productos-jabon">
-        <img class="imagen-jabon" src="./imagenes/jabones vertical.png" alt="jabones">
-        <h4 class="caja-jabon">JABÓN</h4>
-        <button class="boton-jabon"><a href="././pages/productos.html">¡Quiero ver todos!</a></button>
-    </div>
+<!--CARROUSEL-->
+    <div class="container d-flex mb-4 justify-content-center">
+      
+      <div id="carouselExampleControls" class="carousel slide d-flex col-12" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="./imagenes/banner1.png" class="d-block w-100" alt="banner shampoo solido">
+              </div>
+              <div class="carousel-item">
+                  <img src="./imagenes/banner2.png" class="d-block w-100" alt="banner mascarilla facial">
+              </div>
+              <div class="carousel-item">
+                  <img src="./imagenes/banner3.png" class="d-block w-100" alt="banner kit cabello">
+              </div>
+          </div>
     
-    <div class="caja-productos-shampoo">
-        <img class="imagen-shampoo" src="./imagenes/shampoo vertical.png" alt="shampoo">
-        <h4 class="caja-jabon">SHAMPOO</h4>
-        <button class="boton-jabon"><a href="././pages/productos.html">¡Quiero ver todos!</a></button>
-    </div>
-        
-    <div class="caja-productos-acondicionador">
-        <img class="imagen-acondicionador" src="./imagenes/acondicionador vertical.png" alt="acondicionador">
-        <h4 class="caja-jabon">ACONDICIONADOR</h4>
-        <button class="boton-jabon"><a href="././pages/productos.html">¡Quiero ver todos!</a></button>
-    </div>
-
-    </div>
-
-
-    <nav class="navegador-revendedor">
-    <ul><a href="././pages/revendedor.html" style="text-decoration: none;">¿QUERÉS REVENDER NUESTROS PRODUCTOS?</a>
-    </ul>
-</nav>
+        <!--BOTONES DE CARROUSEL-->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>    
+    
+    <section>
+      <!--Containers-->
+      <div class="container-caracteristicas">
+          <div>
+              <img src="./imagenes/icono-cruelty-free.png" alt="coordinacion" class="crueltyfree">
+              <h2 class="h2-caracteristicas">CRUELTY FREE</h2>
+          </div>
+          <div>
+              <img src="./imagenes/icono-sin-quimicos.png" alt="sin quimicos">
+              <h2 class="h2-caracteristicas">SIN QUÍMICOS</h2>
+          </div>
+          <div>
+              <img src="./imagenes/icono-artesanal.png" alt="artesanales">
+              <h2 class="h2-caracteristicas">ARTESANALES</h2>
+          </div>
+        </div>
+    </section>
 </main>
 
 
-<!-- Footer -->
-<footer class="bg-dark text-center text-white">
-  <br>
-  <h3 class="h2-seguinos">¡SEGUINOS!</h3>
-  <!-- Grid container -->
-  <div class="container-d">
-    <!-- Section: Social media -->
-    <section class="mb-4">
-      <!-- Instagram -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/hecate.natural/" role="button"
-        ><img src="./imagenes/instagram a mano.png" width="30" height="30" alt="logo-instagram"></a>
 
-      <!-- Facebook -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/hecatenaturalrosario" role="button"
-        ><img src="./imagenes/facebook a mano.png" width="30" height="30" alt="logo-facebook"></a>
+<div class="contactanos-home">
+  <div>
+    <h2 class="h2-contacto">¿QUERÉS REVENDER NUESTROS PRODUCTOS?</h2>
+  </div>
+  <div class="contactanos-boton"><a href="./pages/revendedor.html">¡CONTACTANOS!</a></div>
+</div> 
 
-    </section>
+<!-- FOOTER -->
+
+<footer class="bg-dark text-center text-white container-fluid bg-dark d-flex align-item-center justify-content-evenly">
+
+  
+    
+    <p class="d-md-flex align-items-center container-fluid d-sm-block">Todos los derechos reservados AJL. 2022</p>
+    
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/hecate.natural/" role="button">
+      
+      <img src="./../imagenes/instagram a mano.png" width="40" height="40" alt="logo-instagram"></a>
+
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/hecatenaturalrosario" role="button">
+        <img src="./../imagenes/facebook a mano.png" width="40" height="40" alt="logo-facebook"></a>
+   
+
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
